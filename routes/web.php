@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SubscribeController@landing')->name('landing');
+Route::post('subscribe', 'SubscribeController@submit');
+Route::get('profile', 'SubscribeController@profile')->name('profile');
