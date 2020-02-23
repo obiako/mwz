@@ -6,17 +6,23 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="{{asset('img/fav.png')}}">
     <!-- Author Meta -->
-    <meta name="author" content="colorlib">
+
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
     <meta name="keywords" content="">
     <!-- meta character set -->
     <meta charset="UTF-8">
+    <script src="https://api.cloudsponge.com/widget/_hFZo_5FBUL9a5r5e7XAhA.js"></script>
     <!-- Site Title -->
     <title>App</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <style>
+        .share-btn{
+            cursor:pointer;
+        }
+    </style>
     <!--
     CSS
     ============================================= -->
@@ -54,6 +60,7 @@
 <script src="{{asset('js/hexagons.min.js')}}"></script>
 <script src="{{asset('js/jquery.counterup.min.js')}}"></script>
 <script src="{{asset('js/waypoints.min.js')}}"></script>
+<script src="{{asset('js/sharer.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
 
 </body>

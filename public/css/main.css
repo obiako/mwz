@@ -3100,3 +3100,6 @@ h6 {
     position: absolute;
     margin-top: 35px;
 }
+.bg-primary{
+    background: #785a3e !important;
+}

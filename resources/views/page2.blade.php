@@ -20,9 +20,13 @@
                 <input type="text" class="form-control" value="{{url('/?referral_code='.Auth::user()->referral_code)}}">
                 <div class="text-center mt-10">
 
-
-
+                <button class="btn btn-sm bg-white share-btn button"  data-sharer="facebook" data-width="800" data-height="600" data-title="Morning Wise" data-url="{{url('/?referral_code='.Auth::user()->referral_code)}}"><i class="fa fa-facebook" style="color: #3b5998;"></i></button>
+                    <button class="btn btn-sm bg-white share-btn button"   data-sharer="twitter" data-width="800" data-height="600" data-title="Morning Wise" data-url="{{url('/?referral_code='.Auth::user()->referral_code)}}"><i class="fa fa-twitter" style="color: #00aced;"></i></button>
+                    <button class="btn btn-sm bg-white share-btn button"  data-sharer="whatsapp" data-width="800" data-height="600" data-title="Morning Wise" data-url="{{url('/?referral_code='.Auth::user()->referral_code)}}"><i class="fa fa-whatsapp" style="color: #4DC247;"></i></button>
+                    <button class="btn btn-sm bg-white share-btn button"   data-sharer="email" data-subject="Hey! Check out that URL" data-width="800" data-height="600" data-title="Morning Wise" data-url="{{url('/?referral_code='.Auth::user()->referral_code)}}"><i class="fa fa-envelope" style="color: #444;"></i></button>
+                    <a href="#" class="cloudsponge-launch btn btn-outline-primary bg-white">Import contacts</a>
                 </div>
+                <textarea class="cloudsponge-contacts"></textarea>
 
             </div>
 
@@ -34,56 +38,56 @@
             <h2 class="text-center mt-10">HERE'S HOW IT WORKS</h2>
 
             <div class="card-group">
-                <div class="card text-white bg-dark mb-3">
-                    <div class="card-header">People Ahead</div>
+                <div class="card text-white bg-primary mb-3 text-center">
+                    <div class="card-header  "><h5 class="text-white">People Ahead</h5></div>
                     <div class="card-body">
 
-                        <h5 class="card-title">{{$position}}</h5>
+                        <h3 class="card-title  text-white">{{$position}}</h3>
 
 
                     </div>
                 </div>
-                <div class="card text-white bg-dark mb-3">
-                    <div class="card-header">Referrals</div>
-                    <div class="card-body">
-                        <h5 class="card-title">{{Auth::user()->children()->count()}}</h5>
+                <div class="card text-white bg-primary mb-3 text-center">
+                    <div class="card-header  "><h5 class="text-white">Referrals</h5></div>
+                    <div class="card-body ">
+                        <h3 class="card-title text-white ">{{Auth::user()->children()->count()}}</h3>
                     </div>
                 </div>
-                <div class="card text-white bg-dark mb-3">
-                    <div class="card-header">Referrals</div>
+                <div class="card text-white bg-primary mb-3 text-center">
+                    <div class="card-header "><h5 class="text-white">People left</h5></div>
                     <div class="card-body">
-                        <h5 class="card-title">{{Auth::user()->children()->count()}}</h5>
+                        <h3 class="card-title  text-white">{{Auth::user()->children()->count()}}</h3>
 
                     </div>
                 </div>
             </div>
 
            <h4>Your Referrals: {{Auth::user()->children()->count()}}</h4>
-            <ol class="ps-timeline">
+            <ol class="ps-timeline ">
                 <li>
 
-                    <div class="ps-bot text-center"  style="color: #0b0b0b;width: 100%;">
+                    <div class="ps-bot text-center pb-25"  style="color: #0b0b0b;width: 100%;">
                         <p class="">Gift 1</p>
                     </div>
                     <span class="ps-sp-top">5</span>
                 </li>
                 <li>
 
-                    <div class="ps-bot text-center"  style="color: #0b0b0b;width: 100%;">
+                    <div class="ps-bot text-center pb-25"  style="color: #0b0b0b;width: 100%;">
                         <p>Gift 2</p>
                     </div>
                     <span class="ps-sp-top">10</span>
                 </li>
                 <li>
 
-                    <div class="ps-bot text-center"  style="color: #0b0b0b;width: 100%;">
+                    <div class="ps-bot text-center pb-25"  style="color: #0b0b0b;width: 100%;">
                         <p>Gift 3</p>
                     </div>
                     <span class="ps-sp-top">25</span>
                 </li>
                 <li>
 
-                    <div class="ps-bot text-center"  style="color: #0b0b0b;width: 100%;">
+                    <div class="ps-bot text-center pb-25"  style="color: #0b0b0b;width: 100%;">
                         <p>Gift 4</p>
                     </div>
                     <span class="ps-sp-top">50</span>
